@@ -18,6 +18,14 @@
             Home
           </a>
           <a 
+            routerLink="/about-us" 
+            routerLinkActive="font-bold text-blue-300" 
+            [routerLinkActiveOptions]="{ exact: true }" 
+            class="hover:underline"
+          >
+            Over ons
+          </a>
+          <a 
             routerLink="/cfmoto" 
             routerLinkActive="font-bold text-blue-300" 
             [routerLinkActiveOptions]="{ exact: true }" 
@@ -54,8 +62,10 @@
       [ngClass]="{ 'max-h-0': !isMobileMenuOpen, 'max-h-60': isMobileMenuOpen }"
     >
       <a routerLink="/" routerLinkActive="font-bold text-blue-300" class="block px-4 py-2 hover:underline">Home</a>
+      <a routerLink="/about-us" routerLinkActive="font-bold text-blue-300" class="block px-4 py-2 hover:underline">Over ons</a>
       <a routerLink="/cfmoto" routerLinkActive="font-bold text-blue-300" class="block px-4 py-2 hover:underline">CF Moto</a>
       <a routerLink="/contact" routerLinkActive="font-bold text-blue-300" class="block px-4 py-2 hover:underline">Contact</a>
+
     </div>
   </nav>
   
