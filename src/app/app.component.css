@@ -21,5 +21,4 @@ html, body {
 
 .page-body {
     flex-grow: 1; /* Allow the body to take up the remaining space */
-    padding: 20px;
 }
