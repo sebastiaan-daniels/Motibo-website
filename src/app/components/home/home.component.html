@@ -1,1 +1,58 @@
-<p>home works!</p>
+<div class="min-h-screen">
+    <header class="bg-cover bg-center h-auto text-white flex flex-col justify-center items-center py-16"
+      style="background-image: url('header.jpg');">
+      <h1 class="text-4xl md:text-6xl font-bold text-center drop-shadow-2xl"><span class="bg-gradient-to-r from-amber-400 to-amber-600 text-transparent bg-clip-text">Motibo</span></h1>
+      <h1 class="text-3xl md:text-5xl font-bold text-center drop-shadow-xl mb-32 md:mb-48 lg:mb-96">
+        Kwaliteit en passie, dat voel je in elke rit.
+        </h1>
+        <button
+          class=" mt-2 bg-red-500 hover:bg-red-700 hover:underline text-white font-bold py-3 px-6 rounded-md shadow-md transition"
+          routerLink="/contact"
+          routerLinkActive="active"
+          [routerLinkActiveOptions]="{ exact: true }">
+          Contacteer ons
+        </button>
+        <button
+          class="mt-2 bg-gray-800 hover:bg-gray-900 text-white font-bold py-3 px-6 rounded-md shadow-md transition"
+          routerLink="/cfmoto"
+          routerLinkActive="active"
+          [routerLinkActiveOptions]="{ exact: true }">
+          Bekijk onze CF Moto motoren
+        </button>
+    </header>
+    <hr class="h-5 bg-gradient-to-r from-red-700 to-red-400 border-0">
+    
+    <body class="bg-cover bg-center px-3 flex flex-col justify-center items-center py-12" style="background-image: url('HomeBackground.jpg');">
+        <div class="max-w-7xl mx-auto px-auto">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-8 text-black">Welkom bij Motibo, jouw expert in motoronderhoud en -herstellingen</h2>
+            <p class="text-lg md:text-xl text-center max-w-4xl mx-auto mb-12 text-white bg-black bg-opacity-20">
+                Bij Motibo draait alles om passie voor motoren en de vrijheid van de weg. Oprichters Bruno en Tibo, vader en zoon, hebben hun droom verwezenlijkt door een motorbedrijf op te starten dat staat voor kwaliteit, vakmanschap en persoonlijk advies. Vanuit hun uitgebreide ervaring en liefde voor motoren bieden ze niet alleen professioneel motoronderhoud en herstellingen, maar ook motoren van het betrouwbare merk CFMOTO.
+            </p>
+        
+            <h3 class="text-2xl md:text-3xl font-bold text-center mb-8 text-black">Wat zeggen onze klanten?</h3>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+              <!-- Location -->
+              <div class="p-6 bg-gray-800 bg-opacity-90 rounded-lg shadow-lg border-4 border-red-400 border-solid">
+                <h3 class="text-xl font-bold mb-2 text-white">Milan</h3>
+                <p class="text-white italic">
+                    “Ik heb mijn brommer van het merk KSR al 2 keer binnengebracht, geen enkele andere garage wou die aannemen. Alles is in orde gebracht, goed afgesteld en terug rijklaar zonder een probleem. Het was in orde gebracht in een korte tijd zodat ik er snel terug mee kon rijden. Met problemen met je motor of brommer is deze garage dus aan te raden.”
+                </p>
+              </div>
+              <!-- Food & Drinks -->
+              <div class="p-6 bg-gray-800 bg-opacity-90 rounded-lg shadow-lg border-4 border-red-400 border-solid">
+                <h3 class="text-xl font-bold mb-2 text-white">Georgio</h3>
+                <p class="text-white italic">
+                    “Voorbeeldige eerlijke en professionele service. Ik bracht een oude motorfiets binnen met meerdere problemen, waaronder een heel moeilijk probleem, en uiteindelijk hebben ze al mijn problemen opgelost.”
+                </p>
+              </div>
+              <!-- Activities -->
+              <div class="p-6 bg-gray-800 bg-opacity-90 rounded-lg shadow-lg border-4 border-red-400 border-solid">
+                <h3 class="text-xl font-bold mb-2 text-white">Noah</h3>
+                <p class="text-white italic">
+                    “Heb mijn Kawasaki 400 binnengebracht voor een onderhoud, overal anders waren er gigantische wachttijden. Top kerel , mega vriendelijk. Snelle en betrouwbare service. Doe zo verder !”
+                </p>
+              </div>
+            </div>
+          </div>
+    </body>
+  </div>
