@@ -5,6 +5,7 @@ import { HomeComponent } from './components/home/home.component';
 import { MenuComponent } from "./components/menu/menu.component";
 import { ContactComponent } from './components/contact/contact.component';
 import { FooterComponent } from "./components/footer/footer.component";
+import { ScrollToTopService } from '../services/scroll-to-top-service';
 
 @Component({
   selector: 'app-root',
@@ -14,6 +15,10 @@ import { FooterComponent } from "./components/footer/footer.component";
   styleUrl: './app.component.css'
 })
 export class AppComponent {
+  constructor(private scrollToTopService: ScrollToTopService) {
+    // The ScrollToTopService is automatically activated through the constructor
+  }
+  
   title = 'motibo-website';
   isScrolled = false;
 
