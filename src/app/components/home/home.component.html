@@ -26,7 +26,9 @@
         <div class="max-w-7xl mx-auto px-auto">
             <h2 class="text-3xl md:text-4xl font-bold text-center mb-8 text-black">Welkom bij Motibo, jouw expert in motoronderhoud en -herstellingen</h2>
             <p class="text-lg md:text-xl text-center max-w-4xl mx-auto m-12">
-              Bij Motibo draait alles om passie voor motoren en de vrijheid van de weg. Oprichters Bruno en Tibo, vader en zoon, hebben hun droom verwezenlijkt door een motorbedrijf op te starten dat staat voor kwaliteit, vakmanschap en persoonlijk advies. Vanuit hun uitgebreide ervaring en liefde voor motoren bieden ze niet alleen professioneel motoronderhoud en herstellingen, maar ook motoren van het betrouwbare merk CFMOTO.
+              Bij Motibo draait alles om passie voor motoren en de vrijheid van de weg. Oprichters Bruno en Tibo, vader en zoon, hebben hun droom verwezenlijkt door een motorbedrijf op te starten dat staat voor kwaliteit, vakmanschap en persoonlijk advies. Vanuit hun uitgebreide ervaring en liefde voor motoren bieden ze niet alleen professioneel motoronderhoud en herstellingen, maar ook motoren van het betrouwbare merk <a class="underline hover:font-semibold hover:bg-gray-600 hover:text-white transition rounded" routerLink="/cfmoto"
+              routerLinkActive="active"
+              [routerLinkActiveOptions]="{ exact: true }">CFMOTO.</a>
             </p>
             <app-carousel class="mb-16" [images]="carouselImages"></app-carousel>
             
@@ -65,7 +67,7 @@
             <div class="flex flex-col lg:flex-row lg:gap-8">
               <!-- Section 1 -->
               <div class="flex-1 p-4 border border-gray-200 rounded-md shadow-lg flex flex-col items-center text-center">
-                <h2 class="text-lg font-bold text-gray-900 mt-2">Verkoop van motoren van het merk CFMOTO</h2>
+                <h2 class="text-lg font-bold text-gray-900 mt-2">verkoop van motoren van CFMOTO</h2>
                 <p class="text-sm text-gray-600 mt-4">
                   wij bieden een zorgvuldig geselecteerd aanbod van motoren, van sportief tot comfortabel, voor elke rijstijl.
                 </p>
@@ -110,7 +112,7 @@
               <div class="p-6 bg-opacity-90 rounded-lg shadow-lg border-2 border-red-400 border-solid">
                 <h3 class="text-xl font-bold mb-2 ">Milan</h3>
                 <p class=" italic">
-                    “Ik heb mijn brommer van het merk KSR al 2 keer binnengebracht, geen enkele andere garage wou die aannemen. Alles is in orde gebracht, goed afgesteld en terug rijklaar zonder een probleem. Het was in orde gebracht in een korte tijd zodat ik er snel terug mee kon rijden. Met problemen met je motor of brommer is deze garage dus aan te raden.”
+                    “Ik heb mijn brommer al 2 keer binnengebracht, geen enkele andere garage wou die aannemen. Alles is in orde gebracht, goed afgesteld en terug rijklaar zonder een probleem. Het was in orde gebracht in een korte tijd zodat ik er snel terug mee kon rijden. Met problemen met je motor of brommer is deze garage dus aan te raden.”
                 </p>
               </div>
               <!-- 2 -->
