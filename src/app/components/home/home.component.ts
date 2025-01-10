@@ -17,5 +17,11 @@ export class HomeComponent {
     '/home-carousel/car4.jpg',
     '/home-carousel/car5.jpg',
   ];
+
+  carousel2Images: string[] = [
+    '/home2-carousel/car1.jpg',
+    '/home2-carousel/car2.jpg',
+    '/home2-carousel/car3.jpg',
+  ]
     router = new Router;
 }
