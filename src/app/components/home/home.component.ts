@@ -18,9 +18,4 @@ export class HomeComponent {
     '/home-carousel/car5.jpg',
   ];
     router = new Router;
-    videoPlayed = false;
-    
-    navigateTo(path: string) {
-      this.router.navigate([path]);
-    }
 }

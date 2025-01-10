@@ -1,1 +1,23 @@
-<p>about-us works!</p>
+<div class="min-h-screen">
+    <body class="bg-cover bg-center px-3 flex flex-col justify-center items-center py-12" style="background-image: url('HomeBackground.jpg');">
+        <div class="max-w-7xl mx-auto px-auto">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-8 text-black">Wie zijn wij?</h2>
+            <h3 class="mt-12 text-2xl md:text-3xl font-bold text-center mb-8 text-black">Passie voor motoren, vakmanschap in onderhoud – dat is Motibo!</h3>
+
+            <p class="text-lg md:text-xl text-center max-w-4xl mx-auto mb-12">
+                Motibo werd in 2020 opgericht door vader Bruno en zijn zoon Tibo, twee motorliefhebbers die sinds jaar en dag sleutelden en hun droom werkelijkheid maakten door een eigen motorbedrijf op te zetten. Met hun jarenlange ervaring in de motorwereld en een gedeelde passie voor motoren, willen Bruno en Tibo motorrijders helpen hun motor in topconditie te houden, zodat ze veilig en met plezier de weg op kunnen.
+            </p>
+            <app-carousel class="mb-16" [images]="carouselImages"></app-carousel>
+            
+            <div class="flex justify-center items-center mt-12">
+              <button
+                class="bg-red-500 hover:bg-red-700 hover:underline text-white font-bold py-3 px-6 rounded-md shadow-md transition"
+                routerLink="/contact"
+                routerLinkActive="active"
+                [routerLinkActiveOptions]="{ exact: true }">
+                Contacteer ons
+              </button>
+            </div>
+          </div>
+    </body>
+  </div>
