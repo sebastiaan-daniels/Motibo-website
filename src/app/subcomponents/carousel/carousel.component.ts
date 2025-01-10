@@ -34,13 +34,21 @@ export class CarouselComponent implements OnInit, OnDestroy {
 
   nextSlide() {
     this.currentSlide = (this.currentSlide + 1) % this.images.length;
-    this.stopAutoSlide()
   }
 
   prevSlide() {
     this.currentSlide =
       (this.currentSlide - 1 + this.images.length) % this.images.length;
-      this.stopAutoSlide()
+  }
+
+  goTonextSlide() {
+    this.nextSlide()
+    this.stopAutoSlide()
+  }
+
+  goToprevSlide() {
+    this.prevSlide()
+    this.stopAutoSlide()
   }
 
   goToSlide(index: number) {
