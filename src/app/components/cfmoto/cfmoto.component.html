@@ -1,1 +1,42 @@
-<p>cfmoto works!</p>
+<div class="min-h-screen">
+    <body class="bg-cover bg-center px-3 flex flex-col justify-center items-center py-12" style="background-image: url('HomeBackground.avif');">
+      <div class="max-w-7xl mx-auto px-auto items-center">
+        <h2 class="text-3xl md:text-4xl font-bold text-center mb-8 text-black">Waarom voor CFMOTO kiezen?</h2>
+        <p class="text-lg md:text-xl text-center max-w-4xl mx-auto m-12">
+          Bij CFMOTO staan technologie en kwaliteit centraal in alles wat ze doen. Het merk investeert voortdurend in de ontwikkeling van geavanceerde management- en productiesystemen, waardoor ze in staat zijn om vooruitstrevende en betrouwbare motoren en voertuigen te leveren die ongeëvenaard zijn in kwaliteit. De tijd, energie en expertise die CFMOTO in hun processen stopt, resulteren in producten die niet alleen de tand des tijds doorstaan, maar ook blijven voldoen aan de hoogste prestatienormen.
+        </p>
+        <app-carousel class="mb-16" [images]="carouselImages"></app-carousel>
+  
+        <p class="text-lg md:text-xl text-center max-w-4xl mx-auto m-12">
+          CFMOTO's missie is duidelijk: ze willen zich onderscheiden door uitmuntende ontwerpen na te streven en door onophoudelijk te innoveren. Dit stelt CFMOTO in staat om uitdagende en opwindende voertuigen te creëren die altijd voorop lopen in de industrie. Ze omarmen vernieuwing en streven ernaar om betrouwbare en spannende ervaringen te leveren aan hun klanten, waarbij geen enkele uitdaging te groot is.
+        </p>
+  
+        <p class="text-lg md:text-xl text-center max-w-4xl mx-auto m-12">
+          Dankzij deze toewijding aan kwaliteit en technologische innovatie blijft CFMOTO niet alleen de verwachtingen overtreffen, maar biedt het ook motoren die grenzen verleggen, zowel op de weg als off-road. Bij Motibo bieden we je de kans om deze kwaliteitsproducten van CFMOTO te ervaren, met de zekerheid dat je kiest voor betrouwbaarheid en hoogwaardige prestaties.
+        </p>
+  
+        <!-- Centered button without the flex on the button itself -->
+        <div class="flex justify-center mt-2">
+          <button
+            class="bg-red-500 hover:bg-red-700 hover:underline text-white font-bold py-3 px-6 rounded-md shadow-md transition"
+            routerLink="/contact"
+            routerLinkActive="active"
+            [routerLinkActiveOptions]="{ exact: true }">
+            Contacteer ons
+          </button>
+        </div>
+        <div class="flex justify-center items-center mt-4">
+          <a
+            href="https://cfmotobenelux.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="mt-2 hover:bg-gray-400 bg-gray-800 hover:underline hover:text-black text-white font-bold py-3 px-6 rounded-md shadow-md transition"
+          >
+            Bekijk de CF Motoren
+          </a>
+        </div>
+
+      </div>
+    </body>
+  </div>
+  
