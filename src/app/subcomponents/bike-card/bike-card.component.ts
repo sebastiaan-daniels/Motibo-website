@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-bike-card',
@@ -8,5 +8,10 @@ import { Component } from '@angular/core';
   styleUrl: './bike-card.component.css'
 })
 export class BikeCardComponent {
-
+  @Input() image: string = '';
+  @Input() title: string = 'Default Title';
+  @Input() price: string = "0.0";
+  @Input() description: string = 'Default Description';
+  @Input() buttonName: string = 'Click Me';
+  @Input() buttonLink: string = '#';
 }

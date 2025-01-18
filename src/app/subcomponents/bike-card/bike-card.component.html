@@ -1,1 +1,16 @@
-<p>bike-card works!</p>
+<div
+  class="max-w-xs bg-white border border-gray-200 rounded-lg shadow-md overflow-hidden transform transition-transform duration-300 hover:scale-105"
+>
+  <img [src]="image" alt="Bike Image" class="w-full h-48 object-cover" />
+  <div class="p-4">
+    <h3 class="text-lg font-semibold text-gray-800 text-center">{{ title }}</h3>
+    <h4 class="text-base font-semibold text-gray-800 text-center">€ {{ price }}</h4>
+    <p class="text-sm text-gray-600 mt-2">{{ description }}</p>
+    <a
+      [href]="buttonLink"
+      class="block mt-4 px-4 py-2 text-center text-white bg-red-500 hover:bg-red-700 hover:underline transition rounded-md shadow-md"
+    >
+      {{ buttonName }}
+    </a>
+  </div>
+</div>

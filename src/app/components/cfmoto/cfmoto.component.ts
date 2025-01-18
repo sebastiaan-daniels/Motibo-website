@@ -1,11 +1,12 @@
 import { Component } from '@angular/core';
 import { CarouselComponent } from "../../subcomponents/carousel/carousel.component";
 import { Router, RouterModule } from '@angular/router';
+import { BikeCardComponent } from "../../subcomponents/bike-card/bike-card.component";
 
 @Component({
   selector: 'app-cfmoto',
   standalone: true,
-  imports: [CarouselComponent, RouterModule],
+  imports: [CarouselComponent, RouterModule, BikeCardComponent],
   templateUrl: './cfmoto.component.html',
   styleUrl: './cfmoto.component.css'
 })
