@@ -15,4 +15,8 @@ export class MenuComponent {
   toggleMobileMenu() {
     this.isMobileMenuOpen = !this.isMobileMenuOpen;
   }
+
+  closeMobileMenu() {
+    this.isMobileMenuOpen = false;
+  }
 }
