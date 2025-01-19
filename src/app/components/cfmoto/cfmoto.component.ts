@@ -13,7 +13,9 @@ import { BikeCardComponent } from "../../subcomponents/bike-card/bike-card.compo
 export class CfmotoComponent {
   carouselImages: string[] = [
     '/cf-moto-carousel/car1.jpg',
-    '/cf-moto-carousel/car2.jpg',
-    '/cf-moto-carousel/car3.jpg',
+    '/cf-moto-carousel/car2.jpeg',
+    '/cf-moto-carousel/car3.jpeg',
+    '/cf-moto-carousel/car4.jpg',
+    '/cf-moto-carousel/car5.jpg',
   ];
 }
