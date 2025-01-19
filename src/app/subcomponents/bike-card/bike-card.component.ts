@@ -1,9 +1,10 @@
 import { Component, Input } from '@angular/core';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-bike-card',
   standalone: true,
-  imports: [],
+  imports: [RouterModule],
   templateUrl: './bike-card.component.html',
   styleUrl: './bike-card.component.css'
 })
@@ -13,5 +14,6 @@ export class BikeCardComponent {
   @Input() price: string = "0.0";
   @Input() description: string = 'Default Description';
   @Input() buttonName: string = 'Click Me';
-  @Input() buttonLink: string = '#';
+  @Input() buttonLink: string = '/';
+
 }
