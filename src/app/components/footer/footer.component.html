@@ -1,21 +1,23 @@
 <footer class="bg-gradient-to-r from-red-600 to-red-400 text-white py-6">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-    <!-- Mobile first layout: 2 rows, responsive to 3 on larger screens -->
-    <div class="grid grid-cols-2 sm:grid-cols-3 gap-8">
-      <!-- Left Section (First row - Email & Telefoon) -->
+    <!-- Footer Grid Layout -->
+    <div class="grid grid-cols-2 md:grid-cols-3 gap-8">
+      <!-- Section 1: Email -->
       <div class="text-left">
         <p class="font-bold">EMAIL</p>
         <p>info&#64;motibo.be</p>
       </div>
+
+      <!-- Section 2: Telefoon -->
       <div class="text-left">
         <p class="font-bold">TELEFOON</p>
         <p>0473 913996</p>
       </div>
 
-      <!-- Follow Us (Second row) -->
-      <div class="col-span-2 sm:col-span-1 text-left">
+      <!-- Section 3: Follow Us -->
+      <div class="text-left">
         <p class="font-bold mb-2">Volg ons</p>
-        <div class="flex justify-start space-x-6">
+        <div class="flex space-x-6">
           <a href="https://www.facebook.com/profile.php?id=61570180843268&name=xhp_nt__fb__action__open_user" target="_blank" rel="noopener noreferrer" class="hover:text-black transition">
             <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
               <path d="M22.675 0H1.325C.595 0 0 .595 0 1.325v21.351C0 23.405.595 24 1.325 24H12.82v-9.294H9.692V11.29h3.128V8.691c0-3.1 1.894-4.788 4.659-4.788 1.325 0 2.464.099 2.794.143v3.24h-1.917c-1.504 0-1.796.715-1.796 1.762v2.309h3.587l-.467 3.416h-3.12V24h6.116c.73 0 1.325-.595 1.325-1.324V1.325C24 .595 23.405 0 22.675 0z"/>
@@ -33,14 +35,29 @@
         </div>
       </div>
 
-      <!-- Right Section (Adres & BTW Nummer) -->
+      <!-- Section 4: Adres -->
       <div class="text-left">
         <p class="font-bold">ADRES</p>
         <p>Vijfde Liniestraat 59, 3110 Rotselaar</p>
       </div>
+
+      <!-- Section 5: BTW Nummer -->
       <div class="text-left">
         <p class="font-bold">BTW NR</p>
         <p>BE0759.835.543</p>
+      </div>
+
+      <!-- Section 6: Privacy & Sale Policy -->
+       <!-- Hidden weghalen voor production! -->
+      <div class="text-left hidden">
+        <p class="font-bold">VOORWAARDEN</p>
+        <div class="flex flex-col space-y-2">
+          <p>
+            <a [routerLink]="'/privacy-policy'" class="hover:text-black transition underline">Privacybeleid</a>
+            & 
+            <a [routerLink]="'/sale-policy'" class="hover:text-black transition underline">verkoopsvoorwaarden</a>
+          </p>
+        </div>
       </div>
     </div>
   </div>
