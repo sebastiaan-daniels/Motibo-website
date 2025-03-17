@@ -1,1 +1,147 @@
-<p>gts-scooters works!</p>
+<div class="min-h-screen">
+    <body class="bg-cover bg-center px-3 flex flex-col justify-center items-center py-12" style="background-image: url('HomeBackground.avif');">
+      <div class="max-w-7xl mx-auto px-auto items-center">
+        <h2 class="text-3xl md:text-4xl font-bold text-center text-black">GTS Scooters</h2>
+
+        <div class="flex justify-center items-center m-12">
+          <img src="/bikes/gts/gts_logo.png" alt="GTS logo" class="max-h-64 text-center">
+        </div>
+        
+        
+        
+        <p class="text-lg md:text-xl text-center max-w-4xl mx-auto mb-12">
+          Met een scooter van GTS ben je klaar voor vertrek. Wij zorgen ervoor dat jij overal gemakkelijk naartoe kunt, zonder afhankelijk te zijn van anderen of van het verkeer. Jij bepaalt je eigen weg, en wij ondersteunen je daarbij met onze kwalitatieve scooters.
+
+          Dus waar je ook heen wilt, GTS gaat met je mee. Ready to ride?
+        </p>
+
+        
+        <app-carousel class="mb-16" [images]="carouselImages"></app-carousel>
+
+        <!-- Centered button without the flex on the button itself -->
+        <div class="flex justify-center m-16">
+          <button
+            class="bg-red-500 hover:bg-red-700 hover:underline text-white font-bold py-3 px-6 rounded-md shadow-md transition"
+            routerLink="/contact"
+            routerLinkActive="active"
+            [routerLinkActiveOptions]="{ exact: true }">
+            Contacteer ons
+          </button>
+        </div>
+
+        <h3 class="mt-12 text-2xl md:text-3xl font-bold text-center mb-8 text-black">Onze Modellen</h3>
+
+        <!-- Bikes -->
+        <!-- <div class="flex-wrap gap-6 gap-y-6 justify-center hidden"> -->
+        <div class="flex flex-wrap gap-6 gap-y-6 justify-center pb-9">
+          <app-bike-card-extern
+            image="/bikes/gts/GTS_125 attitude.webp"
+            title="Attitude 125 (Black)"
+            buttonName="Meer details"
+            buttonLink="#"
+            price="2.974"
+          ></app-bike-card-extern>
+        
+          <app-bike-card-extern
+            image="/bikes/gts/GTS_Bravo_MatDarkOlive_1.webp"
+            title="Bravo 25 (Dark Olive)"
+            buttonName="Meer details"
+            buttonLink="https://www.gts-scooters.com/product/gts-bravo/"
+            price="2174"
+          ></app-bike-card-extern>
+
+          <!-- <app-bike-card-extern // BRAVO 25KM  MAT DARK OLIVE GREEN/BLACK (JN-011) (Geen foto?)
+            image="/bikes/gts/GTS_Enzo_BoracoGrey_1.webp"
+            title="Bravo 25 (Borasco Grey)"
+            buttonName="Meer details"
+            buttonLink="https://www.gts-scooters.com/product/gts-bravo/"
+            price="2174"
+          ></app-bike-card-extern> -->
+
+          <app-bike-card-extern
+            image="/bikes/gts/GTS_Enzo_BoracoGrey_1.webp"
+            title="Enzo Naked 25 (Borasco Grey)"
+            buttonName="Meer details"
+            buttonLink="https://www.gts-scooters.com/product/gts-enzo/"
+            price="2.174"
+          ></app-bike-card-extern>
+
+          <app-bike-card-extern
+            image="/bikes/gts/GTS_EnzoNaked_CapriYellow_1.webp"
+            title="Enzo Naked 25 (Capri Yellow)"
+            buttonName="Meer details"
+            buttonLink="https://www.gts-scooters.com/product/gts-enzo/"
+            price="2.174"
+          ></app-bike-card-extern>
+
+          <app-bike-card-extern
+            image="/bikes/gts/50_GTS_EnzoNaked45_Black_07.webp"
+            title="Enzo Naked 25 (Black)"
+            buttonName="Meer details"
+            buttonLink="https://www.gts-scooters.com/product/gts-enzo/"
+            price="2.174"
+          ></app-bike-card-extern>
+
+          <app-bike-card-extern
+            image="/bikes/gts/GTS_Palermo_MatBruin_1.webp"
+            title="Palermo 25 (Mat Brown)"
+            buttonName="Meer details"
+            buttonLink="https://www.gts-scooters.com/product/gts-palermo/"
+            price="2.174"
+          ></app-bike-card-extern>
+
+          <app-bike-card-extern
+            image="/bikes/gts/GTS_Palerma_NardoGrey_1.webp"
+            title="Palermo 25 (Nardo Grey)"
+            buttonName="Meer details"
+            buttonLink="https://www.gts-scooters.com/product/gts-palermo/"
+            price="2.174"
+          ></app-bike-card-extern>
+
+          <app-bike-card-extern
+            image="/bikes/gts/11_GTS_ToscanaDynamic25_CarbonBlack_01.webp"
+            title="Toscana Dynamic 25 (Carbon Black)"
+            buttonName="Meer details"
+            buttonLink="https://www.gts-scooters.com/product/gts-toscana-dynamic/"
+            price="2.274"
+          ></app-bike-card-extern>
+
+          <app-bike-card-extern
+            image="/bikes/gts/11_GTS_ToscanaDynamic25_CarbonBlack_01.webp"
+            title="Toscana Dynamic 25 (Carbon Black)"
+            buttonName="Meer details"
+            buttonLink="https://www.gts-scooters.com/product/gts-toscana-dynamic/"
+            price="2.274"
+          ></app-bike-card-extern>
+        </div>
+        
+        <p class="text-lg md:text-xl text-center max-w-4xl mx-auto m-8">
+          Ben je benieuwd naar wat GTS Scooters te offeren heeft? Kom dan gerust een kijkje nemen in onze showroom! Bovenstaande modellen zijn steeds bij ons beschikbaar om te bezichtigen! Heb je een ander model van GTS Scooters op het oog? Je kan alle modellen bij ons bestellen! 
+        </p>
+
+        <!-- Centered button without the flex on the button itself -->
+        <div class="flex justify-center mt-2">
+          <button
+            class="bg-red-500 hover:bg-red-700 hover:underline text-white font-bold py-3 px-6 rounded-md shadow-md transition"
+            routerLink="/contact"
+            routerLinkActive="active"
+            [routerLinkActiveOptions]="{ exact: true }">
+            Contacteer ons
+          </button>
+        </div>
+
+        <div class="flex justify-center items-center mt-4">
+          <a
+            href="https://www.gts-scooters.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="mt-2 hover:bg-gray-400 bg-gray-800 hover:underline hover:text-black text-white font-bold py-3 px-6 rounded-md shadow-md transition"
+          >
+            Bekijk alle modellen op GTS Scooters
+          </a>
+        </div>
+
+      </div>
+    </body>
+  </div>
+  
