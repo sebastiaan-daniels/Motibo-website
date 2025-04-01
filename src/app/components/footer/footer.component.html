@@ -49,13 +49,13 @@
 
       <!-- Section 6: Privacy & Sale Policy -->
        <!-- Hidden weghalen voor production! -->
-      <div class="text-left hidden">
+      <div class="text-left">
         <p class="font-bold">VOORWAARDEN</p>
         <div class="flex flex-col space-y-2">
           <p>
-            <a [routerLink]="'/privacy-policy'" class="hover:text-black transition underline">Privacybeleid</a>
-            & 
-            <a [routerLink]="'/sale-policy'" class="hover:text-black transition underline">verkoopsvoorwaarden</a>
+            <a [routerLink]="'/privacy-policy'" class="hover:text-black transition underline hidden">Privacybeleid</a>
+            <!-- &  -->
+            <a [routerLink]="'/sale-policy'" class="hover:text-black transition underline">Verkoopsvoorwaarden</a>
           </p>
         </div>
       </div>
