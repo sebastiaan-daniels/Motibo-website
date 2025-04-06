@@ -2,7 +2,7 @@
     <header class="bg-cover bg-center h-auto text-white flex flex-col justify-center items-center py-16"
       style="background-image: url('header.jpg');">
       <h1 class="text-4xl md:text-6xl font-bold text-center drop-shadow-2xl"><span class="bg-gradient-to-r from-amber-400 to-amber-600 text-transparent bg-clip-text">Motibo</span></h1>
-      <h1 class="text-3xl md:text-5xl font-bold text-center drop-shadow-xl mb-32 md:mb-48 lg:mb-96">
+      <h1 class="text-3xl md:text-5xl font-bold text-center drop-shadow-xl mb-32 md:mb-48 lg:mb-80">
         Kwaliteit en passie, dat voel je in elke rit.
         </h1>
         <button
@@ -19,6 +19,13 @@
           [routerLinkActiveOptions]="{ exact: true }">
           Bekijk onze CFMoto motoren
         </button>
+        <button
+          class="mt-2 bg-gray-200 hover:bg-gray-800 hover:underline text-black hover:text-white font-bold py-3 px-6 rounded-md shadow-md transition"
+          routerLink="/gts-scooters"
+          routerLinkActive="active"
+          [routerLinkActiveOptions]="{ exact: true }">
+          Bekijk onze GTS Scooters
+        </button>
     </header>
     <hr class="h-5 bg-gradient-to-r from-red-700 to-red-400 border-0">
     
@@ -28,7 +35,9 @@
             <p class="text-lg md:text-xl text-center max-w-4xl mx-auto m-12">
               Bij Motibo draait alles om passie voor motoren en de vrijheid van de weg. Oprichters Bruno en Tibo, vader en zoon, hebben hun droom verwezenlijkt door een motorbedrijf op te starten dat staat voor kwaliteit, vakmanschap en persoonlijk advies. Vanuit hun uitgebreide ervaring en liefde voor motoren bieden ze niet alleen professioneel motoronderhoud en herstellingen, maar ook motoren van het innovatief merk <a class="underline hover:font-semibold hover:bg-gray-600 hover:text-white transition rounded" routerLink="/cfmoto"
               routerLinkActive="active"
-              [routerLinkActiveOptions]="{ exact: true }">CFMOTO.</a> waarin techniek en betrouwbaarheid centraal staan.
+              [routerLinkActiveOptions]="{ exact: true }">CFMOTO.</a> waarin techniek en betrouwbaarheid centraal staan. Recent zijn ze ook opgestart met de verkoop van het kwalitatieve scootermerk <a class="underline hover:font-semibold hover:bg-gray-600 hover:text-white transition rounded" routerLink="/gts-scooters"
+              routerLinkActive="active"
+              [routerLinkActiveOptions]="{ exact: true }">GTS Scooters</a>.
             </p>
             <app-carousel class="mb-16" [images]="carouselImages"></app-carousel>
             
