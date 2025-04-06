@@ -185,6 +185,13 @@
     </div>
   </div>
   
-  
+    <button
+    *ngIf="!showModal"
+    (click)="showAdvertAgain()"
+    class="fixed bottom-8 right-8 bg-blue-500 text-white rounded-full p-4 shadow-lg transition hover:bg-blue-600"
+    aria-label="Show Advertisement"
+  >
+    <i class="fas fa-info-circle text-xl"></i>
+  </button>
 
 </div>
