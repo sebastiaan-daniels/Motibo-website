@@ -25,9 +25,9 @@ export class HomeComponent implements OnInit, OnDestroy {
     }
 
     // Disable scrolling when modal is visible
-    if (this.showModal) {
-      document.body.style.overflow = 'hidden';
-    }
+    // if (this.showModal) {
+    //   document.body.style.overflow = 'hidden';
+    // }
   }
 
   ngOnDestroy(): void {
