@@ -1,1 +1,33 @@
-<p>ad-modal works!</p>
+<!-- Advertisement Modal -->
+  <div
+    *ngIf="showModal"
+    class="fixed inset-0 bg-black bg-opacity-80 flex items-center justify-center z-50"
+  >
+    <div class="relative inline-block">
+      <!-- Image container is relative -->
+      <div class="relative inline-block">
+        <img
+          src={{ image }}
+          alt="Advert"
+          class="max-h-[calc(100vh-160px)] w-auto object-contain rounded-lg shadow-2xl"
+        />
+
+        <!-- Close button anchored to image -->
+        <button
+          (click)="dismissModal()"
+          class="absolute -top-4 -right-4 bg-white border border-gray-300 shadow-lg rounded-full w-10 h-10 flex items-center justify-center text-xl font-bold text-gray-700 hover:bg-red-500 hover:text-white transition"
+          aria-label="Close"
+        >
+          &times;
+        </button>
+      </div>
+    </div>
+  </div>
+  <button
+    *ngIf="!showModal"
+    (click)="showAdvertAgain()"
+    class="fixed bottom-8 right-8 text-white rounded-full p-4 shadow-2xl transition bg-red-500 hover:bg-red-700"
+    aria-label="Show Advertisement"
+  >
+    <i class="fas fa-door-open text-xl"></i>
+  </button>
