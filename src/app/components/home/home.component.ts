@@ -1,12 +1,13 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
 import { Router, RouterModule } from '@angular/router';
 import { CarouselComponent } from '../../subcomponents/carousel/carousel.component';
+import { AdModalComponent } from '../../subcomponents/ad-modal/ad-modal.component';
 import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [RouterModule, CarouselComponent, CommonModule],
+  imports: [RouterModule, CarouselComponent, CommonModule, AdModalComponent],
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.css']
 })
