@@ -13,4 +13,5 @@ export class BikeCardExternComponent {
   @Input() description: string = 'Default Description';
   @Input() buttonName: string = 'Click Me';
   @Input() buttonLink: string = '/';
+  @Input() deal: string ="";
 }

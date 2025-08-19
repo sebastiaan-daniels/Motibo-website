@@ -4,7 +4,7 @@
   <img [src]="image" alt="Bike Image" class="w-full h-48 object-cover" />
   <div class="p-4">
     <h3 class="text-lg font-semibold text-gray-800 text-center">{{ title }}</h3>
-    <h4 class="text-base font-semibold text-gray-800 text-center">€ {{ price }}</h4>
+    <h4 class="text-base font-semibold text-gray-800 text-center"><span class="bold text-red-600">{{ deal }}</span>€ {{ price }}</h4>
     <a
       [href]="buttonLink"
       class="text-center block mt-2 hover:bg-gray-400 bg-gray-800 hover:underline hover:text-black text-white font-bold py-3 px-6 rounded-md shadow-md transition"
